@@ -1,5 +1,6 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -11,44 +12,40 @@ import Navbar from '../components/Navbar.astro';
   <link rel="stylesheet" href="/styles/global.css" />
 </head>
 <body>
-  <Navbar />
+  <Header />
 
-  <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
+    <div class="max-w-4xl mx-auto px-4">
       <h1>AI-Powered Design for Modern Brands</h1>
       <p>Custom AI Videos • Print Design • Landing Pages • Ready-Made Templates</p>
     </div>
   </section>
 
-  <!-- Services Grid -->
-  <main class="max-w-6xl mx-auto px-4 py-12">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="/ai-content" class="service-card">
-        <div class="icon">🤖</div>
-        <h3>AI Content & Ads</h3>
+  <main class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <a href="/ai-content" class="service-card text-center p-6">
+        <div class="card-icon">🤖</div>
+        <h2 class="card-title">AI Content & Ads</h2>
+        <p class="card-desc">Custom AI videos for Meta, Google & TikTok</p>
       </a>
-      <a href="/graphic-design" class="service-card">
-        <div class="icon">🎨</div>
-        <h3>Graphic Design</h3>
+      <a href="/graphic-design" class="service-card text-center p-6">
+        <div class="card-icon">🎨</div>
+        <h2 class="card-title">Graphic Design</h2>
+        <p class="card-desc">Business cards, wedding invites, posters & more</p>
       </a>
-      <a href="/custom-web-design" class="service-card">
-        <div class="icon">🖥️</div>
-        <h3>Web Design</h3>
+      <a href="/custom-web-design" class="service-card text-center p-6">
+        <div class="card-icon">🖥️</div>
+        <h2 class="card-title">Web Design</h2>
+        <p class="card-desc">Portfolio & landing pages that convert</p>
       </a>
-      <a href="/templates" class="service-card">
-        <div class="icon">🛒</div>
-        <h3>Templates Shop</h3>
+      <a href="/templates" class="service-card text-center p-6">
+        <div class="card-icon">🛒</div>
+        <h2 class="card-title">Templates Shop</h2>
+        <p class="card-desc">Ready-made designs — buy instantly on Gumroad</p>
       </a>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2025 DesignByYou. All rights reserved.</p>
-      <p><a href="https://github.com/yourusername">GitHub</a> | <a href="mailto:you@example.com">Email</a></p>
-    </div>
-  </footer>
+  <Footer />
 </body>
 </html>
