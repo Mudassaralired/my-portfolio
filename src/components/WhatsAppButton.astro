@@ -1,9 +1,9 @@
 ---
 const { service } = Astro.props;
-const phoneNumber = "923001234567"; // ←←← یہاں اپنا نمبر ڈالیں (no +, no spaces)
+const phoneNumber = "923001234567";
 const message = `Hi! I need ${service} for my business.`;
 const encodedMessage = encodeURIComponent(message);
-const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+const whatsappUrl = `https://wa.me/${923481321775}?text=${encodedMessage}`;
 ---
 
 <a href={whatsappUrl} target="_blank" rel="noopener" class="whatsapp-btn">
