@@ -1,0 +1,19 @@
+---
+const navLinks = [
+  { name: 'AI Content', href: '/ai-content' },
+  { name: 'Graphic Design', href: '/graphic-design' },
+  { name: 'Web Design', href: '/custom-web-design' },
+  { name: 'Templates', href: '/templates' },
+];
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold text-primary">DesignByYou</a>
+    <nav class="hidden md:flex gap-6">
+      {navLinks.map(link => (
+        <a href={link.href} class="hover:text-primary">{link.name}</a>
+      ))}
+    </nav>
+  </div>
+</header>
