@@ -7,32 +7,48 @@ import Navbar from '../components/Navbar.astro';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DesignByYou Portfolio</title>
+  <title>DesignByYou | AI + Design Portfolio</title>
   <link rel="stylesheet" href="/styles/global.css" />
 </head>
 <body>
   <Navbar />
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>AI-Powered Design for Modern Brands</h1>
+      <p>Custom AI Videos • Print Design • Landing Pages • Ready-Made Templates</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
   <main class="max-w-6xl mx-auto px-4 py-12">
-    <h1 class="text-4xl text-center mb-12">Welcome to My Design Portfolio</h1>
-    
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="/ai-content" class="service-card text-center">
-        <div class="text-4xl mb-3">🤖</div>
-        <h2>AI Content</h2>
+      <a href="/ai-content" class="service-card">
+        <div class="icon">🤖</div>
+        <h3>AI Content & Ads</h3>
       </a>
-      <a href="/graphic-design" class="service-card text-center">
-        <div class="text-4xl mb-3">🎨</div>
-        <h2>Graphic Design</h2>
+      <a href="/graphic-design" class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Graphic Design</h3>
       </a>
-      <a href="/custom-web-design" class="service-card text-center">
-        <div class="text-4xl mb-3">🖥️</div>
-        <h2>Web Design</h2>
+      <a href="/custom-web-design" class="service-card">
+        <div class="icon">🖥️</div>
+        <h3>Web Design</h3>
       </a>
-      <a href="/templates" class="service-card text-center">
-        <div class="text-4xl mb-3">🛒</div>
-        <h2>Templates</h2>
+      <a href="/templates" class="service-card">
+        <div class="icon">🛒</div>
+        <h3>Templates Shop</h3>
       </a>
     </div>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 DesignByYou. All rights reserved.</p>
+      <p><a href="https://github.com/yourusername">GitHub</a> | <a href="mailto:you@example.com">Email</a></p>
+    </div>
+  </footer>
 </body>
 </html>
