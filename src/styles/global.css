@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: system-ui, sans-serif;
+  @apply bg-gray-50 text-gray-800;
+}
+
+.service-card {
+  @apply bg-white p-6 rounded-xl shadow border border-gray-200;
+}
+
+.whatsapp-btn {
+  @apply inline-flex items-center gap-2 bg-whatsapp text-white px-5 py-3 rounded-lg font-medium;
+}
