@@ -1,0 +1,38 @@
+---
+import Navbar from '../components/Navbar.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DesignByYou Portfolio</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+  <Navbar />
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-4xl text-center mb-12">Welcome to My Design Portfolio</h1>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="/ai-content" class="service-card text-center">
+        <div class="text-4xl mb-3">🤖</div>
+        <h2>AI Content</h2>
+      </a>
+      <a href="/graphic-design" class="service-card text-center">
+        <div class="text-4xl mb-3">🎨</div>
+        <h2>Graphic Design</h2>
+      </a>
+      <a href="/custom-web-design" class="service-card text-center">
+        <div class="text-4xl mb-3">🖥️</div>
+        <h2>Web Design</h2>
+      </a>
+      <a href="/templates" class="service-card text-center">
+        <div class="text-4xl mb-3">🛒</div>
+        <h2>Templates</h2>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
