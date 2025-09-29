@@ -3,14 +3,61 @@
 @tailwind utilities;
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   @apply bg-gray-50 text-gray-800;
 }
 
-.service-card {
-  @apply bg-white p-6 rounded-xl shadow border border-gray-200;
+/* Navigation */
+header {
+  @apply bg-white shadow-md sticky top-0 z-50;
+}
+header .container {
+  @apply max-w-6xl mx-auto px-4 py-4 flex justify-between items-center;
+}
+header a {
+  @apply text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition;
+}
+header nav a {
+  @apply ml-6 font-medium hover:text-indigo-600 transition;
 }
 
+/* Hero Section */
+.hero {
+  @apply py-20 text-center bg-gradient-to-r from-blue-50 to-indigo-50;
+}
+.hero h1 {
+  @apply text-4xl md:text-5xl font-extrabold mb-4 text-gray-900;
+}
+.hero p {
+  @apply text-xl text-gray-600 max-w-2xl mx-auto mb-8;
+}
+
+/* Service Cards */
+.service-card {
+  @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200;
+}
+.service-card:hover {
+  @apply transform scale-105;
+}
+.service-card .icon {
+  @apply text-5xl mb-4 text-indigo-600;
+}
+.service-card h3 {
+  @apply text-xl font-semibold mb-2 text-gray-900;
+}
+
+/* WhatsApp Button */
 .whatsapp-btn {
-  @apply inline-flex items-center gap-2 bg-whatsapp text-white px-5 py-3 rounded-lg font-medium;
+  @apply inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition transform hover:scale-105;
+}
+
+/* Footer */
+footer {
+  @apply bg-gray-800 text-white py-8 mt-12;
+}
+footer .container {
+  @apply max-w-6xl mx-auto px-4 text-center;
+}
+footer a {
+  @apply text-green-400 hover:text-green-300;
 }
